@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <meta http-equiv="X-UA-Compatible " content="ie edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <div class="overlay" id="overlay">
+        <h3>Searching now...</h3>
+    </div>
+
+    <div class="hero-bg">
+        <section class="top">
+            <header>
+                <a href="#">Tasty food</a>
+            </header>
+
+            <h1><span>Healthy Eating Experience</span></h1>
+
+            <p>Lorem, ipsum dolor sit amet consectetur ad est repudiandae porro suscipit facilis fugiat nulla. Dicta, ipsum temporibus.consectetur ad est repudiandae porro suscipit facilis fugiat nulla. Dicta, ipsum temporibus
+            </p>
+
+            <div class="form-container" <form action="">
+                <div class="form-left">
+                    <label for="city">Enter your city:</label>
+                    <input type="text" name="city" id="city">
+                    <p>Example:"Farmington Hills"</p>
+                </div>
+                <input type="button" value="Find food now" id="cta-btn">
+
+                </form>
+            </div>
+        </section>
+        <section class="authentic">
+            <section class="right-col">
+                <h2><span>Authentic.Awesome</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate rem, et nobis possimus quidem pariatur mollitia? Autem, ipsa? Modi deserunt ipsam ut mollitia similique? Assumenda dicta similique nisi cumque? Iusto?upiditate rem, et
+                    nobis possimus quidem pariatur mollitia? Autem, ipsa? Modi deserunt ipsam ut mollitia similique? Assumenda dicta similique nisi cumque? Iusto?upiditate rem, et nobis possimus quidem pariatur mollitia? Autem, ipsa? Modi deserunt ipsam
+                    ut mollitia similique? Assumenda dicta similique nisi cumque? Iusto?</p>
+            </section>
+            <img src="images/img_2859.jpg" alt="Picture of food in a plate">
+
+        </section>
+    </div>
+
+    <script>
+        let btn = document.getElementById('cta-btn')
+        let overlay = document.getElementById('overlay')
+
+        btn.addEventListener('click', () => {
+            overlay.style.display = 'grid';
+            overlay.classList.add('animate-overlay')
+        })
+    </script>
+</body>
+
+
+</html>
